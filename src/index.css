@@ -1,0 +1,155 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.container{
+    border-bottom: 7.5px solid rgba(229, 234, 236, 0.662);
+}
+#search{
+    width: 840px;
+    /* height: 56px; */
+     /* border: 1px solid;  */
+    /* border-radius: 2px; */
+    /* border-bottom: 5px solid; */
+    box-shadow: 0 2px 4px 0 rgb(0, 0, 0/23%);
+    background-color: rgb(234, 243, 248);
+
+    display: flex;
+}
+#input_search{
+    
+    border: none;
+    background-color: rgb(234, 243, 248);
+
+}
+#box{
+    height: 100%;
+    display: flex;
+}
+
+
+#input_search{
+    width: calc(100% - 32px);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* rpun-right: 0; */
+    font-size: large;
+    padding-left: 0px;
+    margin-left: 0px;
+    border-radius:4px 4px 4px 0 ;
+}
+#search_button{
+  height: auto;
+  padding: 5px;
+  background-color: rgb(234, 243, 248);
+
+}
+input:focus {
+    outline: none;
+  }
+
+.categories{
+    width: 100%;
+    /* justify-content: space-around; */
+    padding-top: 10px;
+    box-sizing: border-box;
+    border-bottom: 12px solid rgba(229, 234, 236, 0.662);
+
+}
+.categories span{
+    font-size: 45px;
+
+}
+.best_for_electronics{
+    width: 100%;
+    height: max-content;
+}
+.best_for_electronics{
+    width: 100%;
+    height: max-content;
+}
+
+
+.best_for_electronics {
+    /* width: 50px; */
+    display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 20px;
+}
+.appliances{
+    border-bottom: 12px solid rgba(229, 234, 236, 0.662);
+
+}
+.item{
+    border: 1px solid rgb(198, 181, 181);
+    padding: 15px;
+    margin: 2px;
+    cursor: pointer;
+    position: relative;
+        object-fit: contain;
+        display: flex   ;
+        overflow: hidden;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 18rem;
+        height: 18rem;
+        margin-top: auto;
+
+        border-radius: 3px;
+        flex-direction: column;
+        font-weight: bold;
+        /* width: 155px; */
+        
+    text-align: center;
+    /* width: 100px; */
+
+    /* display: flex; */
+}
+.item h3{
+    position: absolute; /* Position the text absolutely */
+        bottom: 0; /* Align the text to the bottom */
+        width: 100%;
+        padding-bottom: 10px;
+        text-align: center;
+}
+
+.item img:hover{
+    transform: scale(0.9);
+    z-index: 2;
+}
+.item img{
+    object-fit: contain;
+    /* width: 18rem; */
+    transition: transform 0.3s ease;
+    margin-bottom: 10px;
+}
+.items-2{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-wrap: wrap;
+    flex-direction: column;
+    /* width: 155px; */
+}
+.items-2 img{
+    /* width: 200px;
+        height: 150px; */
+        object-fit: contain;
+        margin-bottom: 10px;
+}
+.offer{
+    margin: 2px;
+    padding: 2px;
+}
+.offer img{
+    width: 30rem;
+    transition: transform 0.3s ease;
+
+}
+.offer img:hover{
+   transform: scale(1.03);
+}
